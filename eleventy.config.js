@@ -1,5 +1,6 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets"); // Scss, JS, and images files
+    eleventyConfig.addPassthroughCopy("src/admin"); // Decap CMS files
     return {
         dir: {
             input: "src", // Set the source for 11ty to the /src directory
