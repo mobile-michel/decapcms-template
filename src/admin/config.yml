@@ -35,18 +35,23 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Navigation"
-        name: "items"
-        file: "src/_data/navigation.yaml"
+      - label: "Site"
+        name: "site"
+        file: "src/_data/site.json"
         fields:
-          - label: Nav Items
+          - label: Site Configuration
             name: items
             widget: list
             allow_add: false
             collapsed: false
             fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
+              - { label: Name, name: name, widget: string }
+              - { label: Description, name: description, widget: string }
+              - { label: GitHub Repo, name: github, widget: string }
+              - { label: Author Name, name: authorName, widget: string }
+              - { label: Author Website, name: authorUrl, widget: string }
+              - { label: Favicon, name: favicon, widget: string }
+              - { label: Stylesheet, name: css, widget: string }
       - label: "Quick Links"
         name: "links"
         file: "src/_data/quicklinks.yaml"
