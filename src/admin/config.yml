@@ -2,12 +2,8 @@ backend:
   # Use netlify identity as backend
   name: git-gateway
   branch: main
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: mobile-michel/decapcms
 media_folder: "src/assets/img"
 public_folder: "/assets/img"
-
 # Please run "npx netlify-cms-proxy-server" for local backend
 local_backend: false
 # publish_mode: editorial_workflow
@@ -35,19 +31,17 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Site"
+      - label: "Site Configuration"
         name: "site"
         file: "src/_data/site.json"
         fields:
-          - label: Site Configuration
-            fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Description, name: description, widget: string }
-              - { label: GitHub Repo, name: github, widget: string }
-              - { label: Author Name, name: authorName, widget: string }
-              - { label: Author Website, name: authorUrl, widget: string }
-              - { label: Favicon, name: favicon, widget: string }
-              - { label: Stylesheet, name: css, widget: string }
+          - { label: Name, name: name, widget: string }
+          - { label: Description, name: description, widget: string }
+          - { label: GitHub Repo, name: github, widget: string }
+          - { label: Author Name, name: authorName, widget: string }
+          - { label: Author Website, name: authorUrl, widget: string }
+          - { label: Favicon, name: favicon, widget: string }
+          - { label: Stylesheet, name: css, widget: string }
       - label: "Quick Links"
         name: "links"
         file: "src/_data/quicklinks.yaml"
