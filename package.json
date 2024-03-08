@@ -1,7 +1,7 @@
 {
-  "name": "01-basic-liquid-simple",
+  "name": "decapcms-template",
   "version": "1.0.0",
-  "description": "Eleventy 2.0.1 basic template with Liquid templating & Simple CSS framework",
+  "description": "Eleventy 2.0.1 template with Liquid, Simple.css & DecapCMS.",
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",

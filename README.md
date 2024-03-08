@@ -1,4 +1,4 @@
-# Basic template with Eleventy, Liquid & Simple.css framework
+# Eleventy 2.0.1 template with Liquid, Simple.css & DecapCMS
 
 ## Folder structure
 - pages in /src
