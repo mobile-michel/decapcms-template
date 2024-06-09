@@ -7,9 +7,9 @@
   <title>{{ title }}</title>
   <meta name="author" content="{{ site.authorName }}">
   <meta name="description" content="{{ site.description }}">
-  <link rel="icon" href="{{ site.favicon }}" type="image/svg+xml">
+  <link rel="icon" href="{{ site.favicon | url }}" type="image/svg+xml">
   <title>{{ site.name }}</title>
-  <link rel="stylesheet" href="/assets/css/simple.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/simple.min.css' | url }}">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
